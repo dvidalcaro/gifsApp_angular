@@ -5,7 +5,13 @@
 
     <div class="list-group list-reset">
 
-      <a class="list-group-item list-group-item-action" href="#">Hola</a>
+      <a 
+      *ngFor="let item of historial" 
+      (click)="buscar(item)"
+      class="list-group-item list-group-item-action" 
+      href="#"> 
+      {{ item | titlecase }} 
+    </a>
     </div>
   </div>
   <!-- End SideBar -->

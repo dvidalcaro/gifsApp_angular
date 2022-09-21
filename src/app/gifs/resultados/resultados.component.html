@@ -1,1 +1,20 @@
-<p>resultados works!</p>
+<p>resultados</p>
+
+    <div class="row">
+        <div *ngFor="let gif of resultados"
+        class="col-md-4 col-sm-6 animate__animated animate__fadeIn container-img">
+            <div class="card">
+                <img [src]="gif.images.fixed_height_small.url" [alt]="gif.title"
+                class="card-img-top ing" >
+                <div class="card-body">
+                    <p class="card-text">
+                        {{gif.title }}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+        
+    
+
